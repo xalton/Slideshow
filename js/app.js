@@ -7,6 +7,7 @@ function setUpEvents() {
     var imageData = new Image();
     imageData.onload = function() {
       document.slide.src = path + i.toString() + '.jpg';
+      document.getElementById('num').textContent = i;
       i = i + 1
       setTimeout(changeImg, time);
     }
